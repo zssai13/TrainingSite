@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { ArrowRight, ArrowLeft, ChevronDown, ExternalLink } from 'lucide-react'
 
 const lessons = [
@@ -193,15 +194,15 @@ export default function EcomGrowthTrainingPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-black/5">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between h-16">
-            <a href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <span className="text-xl font-medium tracking-tight text-black">HYROS</span>
               <span className="text-[13px] text-black/40 font-light">Academy</span>
-            </a>
+            </Link>
             <div className="hidden md:flex items-center gap-8">
               <a href="https://docs.hyros.com" className="text-[13px] text-black/60 hover:text-black transition-colors">
                 Documentation
               </a>
-              <a href="#" className="text-[13px] text-black/60 hover:text-black transition-colors">
+              <a href="https://support.hyros.com" className="text-[13px] text-black/60 hover:text-black transition-colors">
                 Support
               </a>
               <a
@@ -219,13 +220,13 @@ export default function EcomGrowthTrainingPage() {
       <section className="pt-32 pb-20 lg:pt-44 lg:pb-28">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           {/* Breadcrumb */}
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2 text-[13px] text-black/40 hover:text-black/60 transition-colors mb-12"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to all courses
-          </a>
+          </Link>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Video */}
@@ -249,7 +250,7 @@ export default function EcomGrowthTrainingPage() {
               </h2>
               <p className="text-black/60 leading-relaxed mb-6">
                 Before diving into the lessons, watch this quick introduction to understand how
-                this training is structured and what you'll achieve by the end.
+                this training is structured and what you&apos;ll achieve by the end.
               </p>
               <p className="text-black/60 leading-relaxed">
                 Each lesson is designed to be completed in under 5 minutes, with immediate
@@ -310,13 +311,13 @@ export default function EcomGrowthTrainingPage() {
                 Browse Documentation
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
-              <a
+              <Link
                 href="/"
                 className="inline-flex items-center gap-2 text-[15px] text-black/60 hover:text-black transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />
                 Back to all courses
-              </a>
+              </Link>
             </div>
           </div>
         </div>

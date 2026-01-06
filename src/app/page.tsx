@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { ArrowRight, BookOpen, TrendingUp, Phone, Layers, GraduationCap } from 'lucide-react'
 
 const businessModels = [
@@ -42,13 +43,13 @@ export default function HomePage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-black/5">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between h-16">
-            <a href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <span className="text-xl font-medium tracking-tight text-black">HYROS</span>
               <span className="text-[13px] text-black/40 font-light">Academy</span>
-            </a>
+            </Link>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#" className="text-[13px] text-black/60 hover:text-black transition-colors">Documentation</a>
-              <a href="#" className="text-[13px] text-black/60 hover:text-black transition-colors">Support</a>
+              <a href="https://docs.hyros.com" className="text-[13px] text-black/60 hover:text-black transition-colors">Documentation</a>
+              <a href="https://support.hyros.com" className="text-[13px] text-black/60 hover:text-black transition-colors">Support</a>
               <a
                 href="https://app.hyros.com"
                 className="text-[13px] bg-black text-white px-4 py-2 hover:bg-black/80 transition-colors"
@@ -124,7 +125,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {businessModels.map((model, index) => (
-              <a
+              <Link
                 key={model.title}
                 href={model.href}
                 className="group relative bg-white border-2 border-black p-8 hover:bg-black transition-all duration-300"
@@ -145,12 +146,11 @@ export default function HomePage() {
                 <p className="text-[15px] text-black/60 group-hover:text-white/70 leading-relaxed transition-colors">
                   {model.description}
                 </p>
-              </a>
+              </Link>
             ))}
 
             {/* Featured Card */}
-            <a
-              href="#"
+            <div
               className="group relative bg-[#FAF9F7] border-2 border-transparent p-8 hover:border-black transition-all duration-300"
             >
               <div className="flex items-start justify-between mb-12">
@@ -164,7 +164,7 @@ export default function HomePage() {
               <p className="text-[15px] text-black/40 leading-relaxed">
                 Deep-dive sessions for power users ready to maximize every feature.
               </p>
-            </a>
+            </div>
           </div>
         </div>
       </section>
