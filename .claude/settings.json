@@ -1,0 +1,34 @@
+{
+  "project": {
+    "name": "HYROS Training Site",
+    "description": "Modern, LLM-optimized training platform for HYROS ad attribution software",
+    "version": "0.1.0"
+  },
+  "stack": {
+    "framework": "Next.js 15",
+    "language": "TypeScript",
+    "styling": "Tailwind CSS 4",
+    "ui": "shadcn/ui",
+    "content": "MDX"
+  },
+  "paths": {
+    "source": "src",
+    "components": "src/components",
+    "content": "src/content",
+    "styles": "src/styles",
+    "public": "public",
+    "docs": "docs"
+  },
+  "conventions": {
+    "componentNaming": "PascalCase",
+    "fileNaming": "kebab-case",
+    "cssVariables": "HSL format",
+    "exports": "named exports preferred"
+  },
+  "priorities": [
+    "LLM readability",
+    "Accessibility (WCAG 2.1 AA)",
+    "Performance (90+ Lighthouse)",
+    "Clean, minimal design"
+  ]
+}

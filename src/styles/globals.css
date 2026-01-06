@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/*
+ * HYROS Academy - Homepage Variation 1
+ * Editorial Minimalism: White + Hard Black
+ */
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+.font-display {
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-optical-sizing: auto;
+}
+
+.font-serif {
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   FOCUS STATES
+   ============================================ */
+
+:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+
+::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}

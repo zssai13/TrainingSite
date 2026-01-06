@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.anthropic.com)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_take_screenshot",
+      "Skill(frontend-design)",
+      "WebFetch(domain:training.hyros.com)",
+      "mcp__playwright__browser_press_key",
+      "WebFetch(domain:fast.wistia.net)",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_close"
+    ]
+  }
+}

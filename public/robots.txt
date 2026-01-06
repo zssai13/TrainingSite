@@ -1,0 +1,35 @@
+# HYROS Training Site - Robots.txt
+# https://training.hyros.com/robots.txt
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# LLM-specific instructions file
+# For AI assistants and language models, see /llms.txt
+
+# Sitemap location
+Sitemap: https://training.hyros.com/sitemap.xml
+
+# Specific AI crawler allowances
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# API endpoints are also crawlable
+User-agent: *
+Allow: /api/

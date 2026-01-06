@@ -1,0 +1,91 @@
+# HYROS Training Site
+
+> A comprehensive training platform for HYROS ad attribution software.
+> This site provides educational content for marketing professionals across multiple business verticals.
+
+## About HYROS
+
+HYROS is an ad attribution platform that helps businesses track the true ROI of their advertising spend. This training site teaches users how to:
+
+- Set up and configure HYROS tracking
+- Optimize ad campaigns using attribution data
+- Build custom dashboards for key metrics
+- Integrate HYROS with advertising platforms
+- Understand lifetime value (LTV) forecasting
+
+## Site Structure
+
+The training content is organized by business vertical:
+
+### /agency/
+Training for marketing agency owners who use HYROS to manage client attribution tracking.
+
+### /ecommerce/
+E-commerce specific training covering:
+- Accurate data for scaling ads
+- Traffic source attribution
+- Profit optimization with full COGS
+- Lifetime value forecasting
+- Custom dashboard creation
+
+### /calls/
+Training for call-based businesses (high-ticket sales via phone):
+- Call tracking setup
+- Lead attribution
+- Sales funnel optimization
+
+### /saas/
+SaaS-specific training:
+- Subscription tracking
+- Trial-to-paid conversion attribution
+- Churn analysis integration
+
+### /info-education/
+Training for info product creators and educators:
+- Course launch attribution
+- Webinar tracking
+- Multi-touchpoint attribution
+
+### /advanced/
+Advanced feature training:
+- API integrations
+- Custom tracking implementations
+- Advanced dashboard configurations
+
+## Content Types
+
+Each training category contains:
+- **Modules** - Grouped lessons by topic
+- **Lessons** - Individual video-based training units
+- **Quick Start Guides** - Fast-track setup instructions
+
+### Lesson Structure
+
+Each lesson includes:
+1. Video content (embedded player)
+2. Problem statement (what issue the lesson addresses)
+3. HYROS solution (how HYROS solves the problem)
+4. Documentation links (to docs.hyros.com for technical details)
+
+## API Endpoints
+
+For programmatic access to content:
+
+- `GET /api/content` - Full content index with metadata
+- `GET /api/categories` - List all training categories
+- `GET /api/lessons` - All lessons with titles, descriptions, durations
+- `GET /api/search?q={query}` - Search across all content
+
+## Related Resources
+
+- Main HYROS Dashboard: https://app.hyros.com
+- HYROS Documentation: https://docs.hyros.com
+- HYROS Website: https://hyros.com
+
+## Contact
+
+For support with HYROS training or the platform itself, visit the official HYROS support channels.
+
+---
+
+This content is optimized for language model consumption. All pages use semantic HTML with proper heading hierarchy for easy content extraction.
