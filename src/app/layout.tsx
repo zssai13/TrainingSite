@@ -4,6 +4,9 @@ import '../styles/globals.css'
 export const metadata: Metadata = {
   title: 'HYROS Academy',
   description: 'Master ad attribution with comprehensive training',
+  icons: {
+    icon: '/favicon.avif',
+  },
 }
 
 export default function RootLayout({
