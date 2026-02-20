@@ -8,82 +8,50 @@ const lessons = [
   {
     id: 1,
     number: '01',
-    title: 'Using Correct Data To Scale Ads',
-    duration: '4 min',
-    videoId: '6uyc4d8dfe',
+    title: "What's Working in 2026",
+    duration: '10 min',
+    videoId: 'ywou9b4mgw',
     problem: [
-      'Course and coaching sales aren\'t being tracked accurately across platforms',
-      'Ad platforms miss conversions from webinars, VSLs, and application funnels',
-      'Making scaling decisions based on incomplete attribution data',
+      'Strategies from 2024/2025 are no longer converting due to platform and privacy changes',
+      'Unclear which ad channels and attribution methods still deliver real ROI',
+      'Wasting budget on outdated tactics while competitors adapt faster',
     ],
     solution:
-      'HYROS tracks the complete customer journey from ad click through course purchase or coaching enrollment. See exactly which ads, audiences, and content are driving your highest-value students and clients.',
+      'A comprehensive look at the current attribution landscape and what top media buyers are doing right now with HYROS to stay profitable. Learn which strategies are working across niches today so you can focus your spend on what actually moves the needle.',
     docsUrl: 'https://docs.hyros.com/category/initial/',
-    docsLabel: 'Initial Setup Guide',
+    docsLabel: 'Getting Started Guide',
   },
   {
     id: 2,
     number: '02',
-    title: 'Optimize Ads For High Converting Customers',
-    duration: '5 min',
-    videoId: 'kht91wxugs',
+    title: 'Easy Wins From Using Hyros',
+    duration: '10 min',
+    videoId: '51gnsge3y7',
     problem: [
-      'Optimizing for webinar registrations instead of actual course purchases',
-      'No visibility into which leads become paying students vs. tire-kickers',
-      'Unable to distinguish high-ticket coaching clients from low-ticket buyers',
+      'Leaving money on the table by not using HYROS features that take minutes to enable',
+      'Default ad platform settings are costing you conversions you could be tracking',
+      'No clear quick-start path to see immediate improvements in your data',
     ],
     solution:
-      'HYROS tracks which leads actually convert to paying customers, allowing you to optimize campaigns around revenue, not just leads. Train your ad algorithms on your best buyers, not just anyone who opts in.',
-    docsUrl: 'https://docs.hyros.com/funnel-tracking/',
-    docsLabel: 'Funnel Tracking Guide',
+      'Discover the low-effort, high-impact HYROS features you can turn on right now to see better attribution data and improved ROAS. These are the quick wins that experienced media buyers implement first to get results fast.',
+    docsUrl: 'https://docs.hyros.com/category/initial/',
+    docsLabel: 'Quick Setup Guide',
   },
   {
     id: 3,
     number: '03',
-    title: 'Maximize Long Term Profit With LTV',
-    duration: '6 min',
-    videoId: '55c0ekbal0',
+    title: 'Advanced Strategies on Hyros',
+    duration: '9 min',
+    videoId: '4u2go5poyh',
     problem: [
-      'Platform tracking ignores upsells, backend offers, and continuity programs',
-      'Unable to optimize for lifetime student or client value',
-      'Missing the true ROI of acquisition campaigns',
+      'Basic tracking setup is not enough to compete in saturated niches',
+      'Complex funnels with multiple touchpoints need deeper attribution to scale',
+      'Hit a scaling plateau and need advanced tactics to break through',
     ],
     solution:
-      'HYROS forecasts customer lifetime value using historical data, including course upgrades, coaching upsells, and membership renewals. Make scaling decisions based on the true long-term value of each customer.',
-    docsUrl: 'https://docs.hyros.com/ltv-forecasting/',
-    docsLabel: 'LTV Forecasting Guide',
-  },
-  {
-    id: 4,
-    number: '04',
-    title: 'Plug ACCURATE Data Into Your Ad Managers',
-    duration: '4 min',
-    videoId: 'mvdr7crkqa',
-    problem: [
-      'Switching between HYROS and ad platforms to compare data',
-      'Manual data entry and spreadsheet reconciliation',
-      'Decision-making slowed by fragmented analytics',
-    ],
-    solution:
-      'HYROS integrates directly into your ad managers via our Chrome extension. See accurate attribution data right inside Facebook, Google, and other ad platforms without leaving your workflow.',
-    docsUrl: 'https://docs.hyros.com/hyros-chrome-app-2/',
-    docsLabel: 'Chrome Extension Setup',
-  },
-  {
-    id: 5,
-    number: '05',
-    title: 'Create Fast Dashboard Reports For Your KEY Metrics',
-    duration: '5 min',
-    videoId: 'opw9v390lw',
-    problem: [
-      'Building reports manually from multiple data sources',
-      'No unified view of funnel performance and ad spend',
-      'Hours spent reconciling payment processor data with marketing data',
-    ],
-    solution:
-      'HYROS provides customizable dashboards that unify your sales data with advertising performance. Build the exact views you need in minutes and share them with your team.',
-    docsUrl: 'https://docs.hyros.com/quick-reports-2/',
-    docsLabel: 'Quick Reports Guide',
+      'Power-user techniques for getting the most out of HYROS — advanced attribution models, custom event tracking, and multi-touch strategies that let you scale confidently past the point where most advertisers stall out.',
+    docsUrl: 'https://docs.hyros.com/funnel-tracking/',
+    docsLabel: 'Advanced Tracking Guide',
   },
 ]
 
@@ -253,7 +221,7 @@ export default function GeneralLessonsTrainingPage() {
               Course Content
             </p>
             <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-black text-black leading-tight">
-              5 lessons to scale your course business
+              3 lessons to scale your course business
             </h2>
           </div>
 

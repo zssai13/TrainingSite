@@ -5,6 +5,12 @@ import { ArrowRight, BookOpen, TrendingUp, Phone, Layers, GraduationCap } from '
 
 const businessModels = [
   {
+    title: 'Start Here',
+    description: 'These are critical lessons to media buy in all niches in 2026.',
+    icon: Phone,
+    href: '/start-here-2026/',
+  },
+  {
     title: 'Agency',
     description: 'Track and attribute results across multiple client accounts with precision.',
     icon: Layers,
@@ -15,12 +21,6 @@ const businessModels = [
     description: 'Optimize your DTC ad spend and maximize ROAS with accurate attribution.',
     icon: TrendingUp,
     href: '/ecom-growth-training/',
-  },
-  {
-    title: 'Calls',
-    description: 'Connect phone conversions to the ads that actually drive high-ticket sales.',
-    icon: Phone,
-    href: '/call-based/',
   },
   {
     title: 'SaaS',
@@ -149,22 +149,6 @@ export default function HomePage() {
               </Link>
             ))}
 
-            {/* Featured Card */}
-            <div
-              className="group relative bg-[#FAF9F7] border-2 border-transparent p-8 hover:border-black transition-all duration-300"
-            >
-              <div className="flex items-start justify-between mb-12">
-                <span className="text-[11px] uppercase tracking-[0.15em] text-black/40 font-medium">
-                  Coming Soon
-                </span>
-              </div>
-              <h3 className="text-xl font-medium text-black/40 mb-3">
-                Advanced Training
-              </h3>
-              <p className="text-[15px] text-black/40 leading-relaxed">
-                Deep-dive sessions for power users ready to maximize every feature.
-              </p>
-            </div>
           </div>
         </div>
       </section>
