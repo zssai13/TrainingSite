@@ -567,7 +567,7 @@ export default function AgencyTrainingPage() {
               Course Content
             </p>
             <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-black text-black leading-tight">
-              The Agency Ad Playbook
+              Expert Media Buying &amp; Scaling
             </h2>
             <div className="flex flex-wrap gap-x-6 gap-y-2 mt-4">
               <span className="text-[14px] text-black/40">4 Modules</span>
