@@ -8,72 +8,44 @@ const lessons = [
   {
     id: 1,
     number: '01',
-    title: 'Using Correct Data To Scale Ads',
-    duration: '4 min',
-    videoId: '6uyc4d8dfe',
+    title: 'Scaling Ecom Accounts on Meta: Strategies for 2026',
+    duration: '16 min',
+    videoId: '8v3hp0aq0b',
     problem: [
-      'Mis-attribution of sales across multiple traffic sources',
-      'Ad platforms miss 15-20%+ of conversions due to tracking limitations',
-      'Making scaling decisions based on incomplete data',
+      'Meta ad strategies from 2024/2025 are delivering diminishing returns as the platform evolves',
+      'No clear playbook for scaling e-commerce accounts on Meta in the current landscape',
+      'Wasting budget testing outdated campaign structures and audience strategies',
     ],
     solution:
-      'HYROS provides accurate attribution and eliminates tracking gaps between your ad platforms and actual sales. By connecting directly to your payment processor and tracking the full customer journey, HYROS ensures you see every conversion—claiming at least 15-20% ROAS improvements for most businesses.',
+      'The current Meta advertising strategies that are actually working for e-commerce in 2026. Learn how to structure campaigns, target audiences, and use attribution data from HYROS to scale profitably on the platform where most DTC brands spend the majority of their budget.',
   },
   {
     id: 2,
     number: '02',
-    title: 'Optimize For True Profit With FULL COGs',
-    duration: '5 min',
-    videoId: 'gmb2ag9wbi',
+    title: 'Maximizing E-Commerce Success Via Metrics',
+    duration: '12 min',
+    videoId: 'aqf06oa439',
     problem: [
-      'Ad platforms lack visibility into cost of goods, shipping, and refunds',
-      'Optimizing for revenue instead of actual profit',
-      'No way to account for variable costs per product',
+      'Tracking dozens of metrics but not knowing which ones actually drive profitability',
+      'Making scaling and cutting decisions based on surface-level platform data',
+      'No framework for connecting ad metrics to real business outcomes like profit and LTV',
     ],
     solution:
-      'HYROS integrates your system data to display true profit accounting for all cost factors beyond ad spend. See your actual margins on every sale and optimize your campaigns for profit, not just revenue.',
+      'How to identify and focus on the metrics that actually determine e-commerce profitability. Use HYROS to cut through vanity numbers and build a data-driven decision framework that tells you exactly which campaigns to scale, which to cut, and where to invest next.',
   },
   {
     id: 3,
     number: '03',
-    title: 'Maximize Long Term Profit With LTV',
-    duration: '6 min',
-    videoId: '55c0ekbal0',
+    title: 'Advanced E-Commerce Strategies Using Insights',
+    duration: '9 min',
+    videoId: 'kmgljiudrx',
     problem: [
-      'Platform tracking ignores repeat sales and subscriptions',
-      'Unable to optimize for long-term customer value',
-      'Missing revenue from subscription and recurring purchases',
+      'Basic tracking and optimization is not enough to compete in saturated e-commerce niches',
+      'Leaving revenue on the table by not leveraging the deeper insights HYROS provides',
+      'Hit a scaling ceiling and need advanced tactics to push past it',
     ],
     solution:
-      'HYROS forecasts customer lifetime value using historical and new data, including subscription revenue projections. Make scaling decisions based on the true value of each customer, not just their first purchase.',
-  },
-  {
-    id: 4,
-    number: '04',
-    title: 'Plug ACCURATE Data Into Your Ad Managers',
-    duration: '4 min',
-    videoId: 'mvdr7crkqa',
-    problem: [
-      'Accessing analytics requires separate logins and tabs',
-      'Creates friction in decision-making workflows',
-      'Constantly switching between HYROS and ad platforms',
-    ],
-    solution:
-      'HYROS integrates directly into your ad managers via our Chrome extension. See accurate HYROS data right inside Facebook, Google, and other ad platforms without leaving your workflow.',
-  },
-  {
-    id: 5,
-    number: '05',
-    title: 'Create Fast Dashboard Reports For Your KEY Metrics',
-    duration: '5 min',
-    videoId: 'opw9v390lw',
-    problem: [
-      'Obtaining comprehensive business overviews requires combining multiple data sources',
-      'No single source of truth for your marketing performance',
-      'Hours spent building reports manually',
-    ],
-    solution:
-      'HYROS provides customizable dashboards powered by accurate data for unified reporting. Build the exact views you need in minutes and share them with your team or clients.',
+      'Advanced e-commerce advertising techniques powered by HYROS data insights. Go beyond basic attribution into strategies like customer segmentation, cohort-based optimization, and predictive scaling that separate top-performing stores from the rest.',
   },
 ]
 
@@ -210,7 +182,7 @@ export default function EcomGrowthTrainingPage() {
               Course Content
             </p>
             <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-black text-black leading-tight">
-              5 lessons to boost your ROAS
+              3 lessons to scale e-commerce ads
             </h2>
           </div>
 
