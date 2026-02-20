@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 const lessons = [
@@ -171,6 +172,62 @@ export default function GeneralLessonsTrainingPage() {
             <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-black text-black leading-tight">
               The Info Product Ad Playbook
             </h2>
+          </div>
+
+          {/* Coach Section */}
+          <div className="mb-12">
+            <div className="border-2 border-black bg-white p-8 lg:p-10">
+              <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start">
+                {/* Coach Image */}
+                <div className="shrink-0">
+                  <div className="w-28 h-28 lg:w-36 lg:h-36 overflow-hidden border-2 border-black">
+                    <Image
+                      src="/coach-antonio.png"
+                      alt="Antonio Carneiro"
+                      width={144}
+                      height={144}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                </div>
+
+                {/* Coach Info */}
+                <div className="flex-1 min-w-0">
+                  <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-3">
+                    Your Coach
+                  </p>
+                  <h3 className="font-display font-black text-2xl lg:text-3xl text-black leading-tight mb-1">
+                    Antonio Carneiro
+                  </h3>
+                  <p className="text-[13px] text-black/40 mb-5">
+                    9 Figure Media Buyer
+                  </p>
+                  <p className="text-[15px] text-black/60 leading-relaxed max-w-xl mb-8">
+                    Antonio Carneiro is one of the most versatile media buyers we&apos;ve ever seen.
+                    He&apos;s spent a staggering $350M on paid ads, with his area of expertise being
+                    info products, high ticket, and lead generation. Whether it&apos;s your funnel,
+                    ad copy, or your offer — Antonio is the guy to help take you and your clients
+                    to the next level.
+                  </p>
+
+                  {/* Stats */}
+                  <div className="flex flex-wrap gap-x-10 gap-y-4">
+                    <div>
+                      <p className="font-display font-black text-xl lg:text-2xl text-black">$350M+</p>
+                      <p className="text-[12px] text-black/40 mt-0.5">Ad Spend</p>
+                    </div>
+                    <div>
+                      <p className="font-display font-black text-xl lg:text-2xl text-black">Info & High Ticket</p>
+                      <p className="text-[12px] text-black/40 mt-0.5">Area of Expertise</p>
+                    </div>
+                    <div>
+                      <p className="font-display font-black text-xl lg:text-2xl text-black">Lead Gen</p>
+                      <p className="text-[12px] text-black/40 mt-0.5">Specialty</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="bg-white border-2 border-black/10">
