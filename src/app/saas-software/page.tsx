@@ -166,10 +166,9 @@ export default function SaasSoftwareTrainingPage() {
         </div>
       </nav>
 
-      {/* Welcome Video Section */}
-      <section className="pt-32 pb-20 lg:pt-44 lg:pb-28">
+      {/* Lessons Section */}
+      <section className="pt-32 lg:pt-44 pb-20 lg:pb-28 bg-[#FAF9F7]">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          {/* Breadcrumb */}
           <Link
             href="/"
             className="inline-flex items-center gap-2 text-[13px] text-black/40 hover:text-black/60 transition-colors mb-12"
@@ -177,43 +176,6 @@ export default function SaasSoftwareTrainingPage() {
             <ArrowLeft className="w-4 h-4" />
             Back to all courses
           </Link>
-
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* Video */}
-            <div className="aspect-video bg-black overflow-hidden order-2 lg:order-1">
-              <iframe
-                src="https://fast.wistia.net/embed/iframe/drhan93ocz?seo=true&videoFoam=true"
-                title="Welcome to SaaS Training"
-                allow="autoplay; fullscreen"
-                frameBorder="0"
-                className="w-full h-full"
-              />
-            </div>
-
-            {/* Text */}
-            <div className="order-1 lg:order-2">
-              <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-4">
-                Start Here
-              </p>
-              <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-black text-black leading-tight mb-6">
-                Welcome to SaaS Training
-              </h2>
-              <p className="text-black/60 leading-relaxed mb-6">
-                Before diving into the lessons, watch this quick introduction to understand how
-                this training is structured and what you&apos;ll achieve by the end.
-              </p>
-              <p className="text-black/60 leading-relaxed">
-                Each lesson is designed to be completed in under 5 minutes, with immediate
-                actionable takeaways you can apply to your HYROS account right away.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Lessons Section */}
-      <section className="py-20 lg:py-28 bg-[#FAF9F7]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           {/* Section Header */}
           <div className="max-w-xl mb-16">
             <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-4">

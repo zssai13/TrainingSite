@@ -182,8 +182,8 @@ export default function TacticalApplicationPage() {
         </div>
       </nav>
 
-      {/* Welcome Video Section */}
-      <section className="pt-32 pb-20 lg:pt-44 lg:pb-28">
+      {/* Lessons Section */}
+      <section className="pt-32 lg:pt-44 pb-20 lg:pb-28 bg-[#FAF9F7]">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <Link
             href="/ad-course"
@@ -192,41 +192,6 @@ export default function TacticalApplicationPage() {
             <ArrowLeft className="w-4 h-4" />
             Back to AI Attribution Course
           </Link>
-
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div className="aspect-video bg-black overflow-hidden order-2 lg:order-1">
-              <iframe
-                src="https://fast.wistia.net/embed/iframe/drhan93ocz?seo=true&videoFoam=true"
-                title="Welcome to Tactical Application"
-                allow="autoplay; fullscreen"
-                frameBorder="0"
-                className="w-full h-full"
-              />
-            </div>
-
-            <div className="order-1 lg:order-2">
-              <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-4">
-                Module 2
-              </p>
-              <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-black text-black leading-tight mb-6">
-                Tactical Application
-              </h2>
-              <p className="text-black/60 leading-relaxed mb-6">
-                Put the Essential Keys into action with advanced tactics for scaling,
-                lowering CPA, and leveraging AI optimization.
-              </p>
-              <p className="text-black/60 leading-relaxed">
-                These lessons show you exactly how to implement what you&apos;ve learned
-                and achieve measurable results in your campaigns.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Lessons Section */}
-      <section className="py-20 lg:py-28 bg-[#FAF9F7]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="max-w-xl mb-16">
             <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-4">
               Course Content
