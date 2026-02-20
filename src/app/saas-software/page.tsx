@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 const lessons = [
@@ -198,6 +199,61 @@ export default function SaasSoftwareTrainingPage() {
             <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-black text-black leading-tight">
               The SaaS Ad Playbook
             </h2>
+          </div>
+
+          {/* Coach Section */}
+          <div className="mb-12">
+            <div className="border-2 border-black bg-white p-8 lg:p-10">
+              <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start">
+                {/* Coach Image */}
+                <div className="shrink-0">
+                  <div className="w-28 h-28 lg:w-36 lg:h-36 overflow-hidden border-2 border-black">
+                    <Image
+                      src="/coach-alex.png"
+                      alt="Alex Becker"
+                      width={144}
+                      height={144}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                </div>
+
+                {/* Coach Info */}
+                <div className="flex-1 min-w-0">
+                  <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-3">
+                    Your Coach
+                  </p>
+                  <h3 className="font-display font-black text-2xl lg:text-3xl text-black leading-tight mb-1">
+                    Alex Becker
+                  </h3>
+                  <p className="text-[13px] text-black/40 mb-5">
+                    Founder, HYROS
+                  </p>
+                  <p className="text-[15px] text-black/60 leading-relaxed max-w-xl mb-8">
+                    Alex Becker is the founder of HYROS.COM. A SaaS company he grew with ads to
+                    valuations closing in at 200 million. He primarily grew HYROS at its start with
+                    ads and HYROS allows him to see the current strategies working across the largest
+                    of media buyers.
+                  </p>
+
+                  {/* Stats */}
+                  <div className="flex flex-wrap gap-x-10 gap-y-4">
+                    <div>
+                      <p className="font-display font-black text-xl lg:text-2xl text-black">$200M</p>
+                      <p className="text-[12px] text-black/40 mt-0.5">SaaS Valuation</p>
+                    </div>
+                    <div>
+                      <p className="font-display font-black text-xl lg:text-2xl text-black">HYROS</p>
+                      <p className="text-[12px] text-black/40 mt-0.5">Founder & CEO</p>
+                    </div>
+                    <div>
+                      <p className="font-display font-black text-xl lg:text-2xl text-black">Ad-Grown</p>
+                      <p className="text-[12px] text-black/40 mt-0.5">Built With Paid Ads</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Accordion */}
