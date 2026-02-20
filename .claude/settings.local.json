@@ -10,7 +10,9 @@
       "mcp__playwright__browser_press_key",
       "WebFetch(domain:fast.wistia.net)",
       "mcp__playwright__browser_evaluate",
-      "mcp__playwright__browser_close"
+      "mcp__playwright__browser_close",
+      "WebFetch(domain:alexbecker.wistia.com)",
+      "WebFetch(domain:fast.wistia.com)"
     ]
   }
 }

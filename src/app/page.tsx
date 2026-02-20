@@ -32,7 +32,7 @@ const businessModels = [
     title: 'Info & Education',
     description: 'Attribute course sales and coaching clients to your marketing sources.',
     icon: GraduationCap,
-    href: '/general-lessons/',
+    href: '/info-marketing-2026/',
   },
 ]
 
