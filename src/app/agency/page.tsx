@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 interface SubModule {
@@ -575,13 +576,19 @@ export default function AgencyTrainingPage() {
             </div>
           </div>
 
-          {/* Coach Section - Placeholder */}
+          {/* Coach Section */}
           <div className="mb-16">
             <div className="border-2 border-black bg-white p-8 lg:p-10">
               <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start">
                 <div className="shrink-0">
-                  <div className="w-28 h-28 lg:w-36 lg:h-36 overflow-hidden border-2 border-black bg-black/5 flex items-center justify-center">
-                    <span className="text-4xl lg:text-5xl font-display font-black text-black/10">?</span>
+                  <div className="w-28 h-28 lg:w-36 lg:h-36 overflow-hidden border-2 border-black">
+                    <Image
+                      src="/coach-mike.png"
+                      alt="Mike Buontempo"
+                      width={144}
+                      height={144}
+                      className="w-full h-full object-cover object-top"
+                    />
                   </div>
                 </div>
                 <div className="flex-1 min-w-0">
@@ -589,28 +596,33 @@ export default function AgencyTrainingPage() {
                     Your Coach
                   </p>
                   <h3 className="font-display font-black text-2xl lg:text-3xl text-black leading-tight mb-1">
-                    Coming Soon
+                    Mike Buontempo
                   </h3>
                   <p className="text-[13px] text-black/40 mb-5">
-                    Agency Growth Specialist
+                    Founder, Client Accelerators
                   </p>
                   <p className="text-[15px] text-black/60 leading-relaxed max-w-xl mb-8">
-                    Our agency training coach will be announced shortly. This comprehensive
-                    4-module playbook covers everything from advanced HYROS setup to scaling
-                    call funnels, low-ticket funnels, and webinar funnels to 7 and 8 figures.
+                    Mike Buontempo has been in the digital world and running paid ads since
+                    2010. He&apos;s the founder of Client Accelerators, a full-service direct
+                    response agency that has produced over $300M+ in sales from their
+                    omni-channel approach running ads on YouTube, Facebook, Instagram, Google
+                    &amp; TikTok. They specifically help info product brands scale profitably
+                    through scripting, producing &amp; launching all of their ads across these
+                    platforms. Buontempo is the #1 user of HYROS, with over 200 clients on
+                    the platform.
                   </p>
                   <div className="flex flex-wrap gap-x-10 gap-y-4">
                     <div>
-                      <p className="font-display font-black text-xl lg:text-2xl text-black">4</p>
-                      <p className="text-[12px] text-black/40 mt-0.5">Modules</p>
+                      <p className="font-display font-black text-xl lg:text-2xl text-black">$300M+</p>
+                      <p className="text-[12px] text-black/40 mt-0.5">Sales Generated</p>
                     </div>
                     <div>
-                      <p className="font-display font-black text-xl lg:text-2xl text-black">25</p>
-                      <p className="text-[12px] text-black/40 mt-0.5">Videos</p>
+                      <p className="font-display font-black text-xl lg:text-2xl text-black">200+</p>
+                      <p className="text-[12px] text-black/40 mt-0.5">Clients on HYROS</p>
                     </div>
                     <div>
-                      <p className="font-display font-black text-xl lg:text-2xl text-black">~5 hrs</p>
-                      <p className="text-[12px] text-black/40 mt-0.5">Total Duration</p>
+                      <p className="font-display font-black text-xl lg:text-2xl text-black">5 Platforms</p>
+                      <p className="text-[12px] text-black/40 mt-0.5">YouTube, Meta, Google, TikTok</p>
                     </div>
                   </div>
                 </div>
