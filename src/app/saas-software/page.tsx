@@ -8,44 +8,58 @@ const lessons = [
   {
     id: 1,
     number: '01',
-    title: 'Using Correct SaaS Data To Scale Ads',
-    duration: '4 min',
-    videoId: 'ztmsuoaq65',
+    title: '9-Figure SaaS Ad Lesson',
+    duration: '15 min',
+    videoId: '9tl3yr6d66',
     problem: [
-      'SaaS trials and signups don\'t accurately reflect true customer value',
-      'Ad platforms can\'t track the full journey from click to paid subscription',
-      'Making scaling decisions based on incomplete conversion data',
+      'Scaling SaaS ads past 6-7 figures without a proven framework that actually works at scale',
+      'Guessing at budget allocation across channels instead of using data-driven decisions',
+      'No playbook from operators who have actually built and scaled 9-figure SaaS businesses through paid ads',
     ],
     solution:
-      'HYROS connects your subscription billing data directly to your ad campaigns, giving you accurate attribution from first click to recurring revenue. See which ads drive actual paying customers, not just trial signups.',
+      'The advertising strategies used by 9-figure SaaS companies — how they structure campaigns, allocate budget, and use attribution data to scale predictably. Learn the framework that separates SaaS companies that stall from those that break through.',
   },
   {
     id: 2,
     number: '02',
-    title: 'Optimize Around Your TRUE SaaS Conversions',
-    duration: '5 min',
-    videoId: '3r4573u3jx',
+    title: 'The Key Of LTV (Part 1)',
+    duration: '3 min',
+    videoId: 'lctqu7ymwe',
     problem: [
-      'Optimizing for free trials instead of paid conversions',
-      'No visibility into trial-to-paid conversion rates by traffic source',
-      'Unable to distinguish high-value enterprise leads from low-value signups',
+      'Treating all subscribers the same regardless of their lifetime value to your business',
+      'No way to identify which ad sources bring high-retention customers vs. quick churners',
+      'Optimizing for signups and trials instead of long-term recurring revenue',
     ],
     solution:
-      'HYROS tracks the complete SaaS funnel from signup to subscription, allowing you to optimize campaigns around actual revenue events. Stop paying for trials that never convert and focus spend on sources that drive real MRR.',
+      'Why LTV is the most important metric for SaaS advertising and how to use HYROS to track it accurately from ad click through months of recurring revenue. Stop optimizing for vanity signups and start optimizing for the customers who stay.',
   },
   {
     id: 3,
     number: '03',
-    title: 'Maximize SaaS AD MRR/ARR Gains With LTV',
+    title: 'Extreme Growth By Numbers - LTV (Part 2)',
     duration: '6 min',
-    videoId: 'klubtfop2p',
+    videoId: 'xbjds9dfos',
     problem: [
-      'Ad platforms only see the first payment, missing months of recurring revenue',
-      'Unable to optimize for long-term customer value',
-      'Missing the true ROI of acquisition campaigns due to subscription blindness',
+      'Understanding LTV conceptually but not knowing how to apply it to actual ad decisions',
+      'No framework for calculating acceptable CPA based on projected lifetime value',
+      'Scaling blind without unit economics — spending more without knowing if it will pay back',
     ],
     solution:
-      'HYROS forecasts customer lifetime value using your historical subscription data, including churn rates and expansion revenue. Make scaling decisions based on projected ARR, not just initial conversion value.',
+      'The math behind scaling SaaS ads profitably — how to calculate your true LTV, set CPA targets, and use those numbers to make confident scaling decisions with HYROS data. Turn your subscription metrics into an actionable ad strategy.',
+  },
+  {
+    id: 4,
+    number: '04',
+    title: 'The Final Picture Of SaaS Growth',
+    duration: '8 min',
+    videoId: 'ume92j5vjo',
+    problem: [
+      'Individual tactics without a unified growth strategy tying them together',
+      'Unclear how attribution, LTV, and ad optimization connect into a complete system',
+      'Hitting a plateau after initial gains and not knowing how to push past it',
+    ],
+    solution:
+      'How all the pieces fit together — attribution, LTV tracking, ad AI optimization, and scaling strategy combined into a complete SaaS advertising system. The full picture of how to grow SaaS revenue through paid ads with HYROS.',
   },
 ]
 
@@ -182,7 +196,7 @@ export default function SaasSoftwareTrainingPage() {
               Course Content
             </p>
             <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-black text-black leading-tight">
-              3 lessons to maximize your MRR
+              4 lessons to scale SaaS advertising
             </h2>
           </div>
 
