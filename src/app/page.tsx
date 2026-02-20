@@ -6,31 +6,31 @@ import { ArrowRight, BookOpen, TrendingUp, Phone, Layers, GraduationCap } from '
 const businessModels = [
   {
     title: 'Start Here',
-    description: 'These are critical lessons to media buy in all niches in 2026.',
+    description: 'The essential ad strategies every media buyer needs to scale profitably in 2026.',
     icon: Phone,
     href: '/start-here-2026/',
   },
   {
-    title: 'Agency',
-    description: 'Track and attribute results across multiple client accounts with precision.',
+    title: 'Expert Media Buying',
+    description: 'The advanced playbook for scaling ad campaigns to 8 and 9 figures across any channel.',
     icon: Layers,
     href: '/agency/',
   },
   {
     title: 'E-commerce',
-    description: 'Optimize your DTC ad spend and maximize ROAS with accurate attribution.',
+    description: 'The playbook for scaling DTC ads to 7 and 8 figures with real ROAS data.',
     icon: TrendingUp,
     href: '/ecom-growth-training/',
   },
   {
     title: 'SaaS',
-    description: 'Track the complete customer journey from first touch to recurring revenue.',
+    description: 'Turn subscriber data into confident scaling decisions that grow recurring revenue.',
     icon: BookOpen,
     href: '/saas-software/',
   },
   {
     title: 'Info & Education',
-    description: 'Attribute course sales and coaching clients to your marketing sources.',
+    description: 'Scale course and coaching ads by optimizing for buyers, not just leads.',
     icon: GraduationCap,
     href: '/info-marketing-2026/',
   },
@@ -115,11 +115,11 @@ export default function HomePage() {
               Choose Your Path
             </p>
             <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-black text-black leading-tight mb-4">
-              Select your business model
+              Choose your growth track
             </h2>
             <p className="text-black/60 leading-relaxed">
-              Each track is tailored to your specific industry with lessons that address
-              your unique attribution challenges.
+              Each track is built for your business model with strategies to scale
+              your ads profitably.
             </p>
           </div>
 
