@@ -197,7 +197,7 @@ export default function CallBasedTrainingPage() {
               Course Content
             </p>
             <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-black text-black leading-tight">
-              5 lessons to track call conversions
+              The Call-Based Ad Playbook
             </h2>
           </div>
 

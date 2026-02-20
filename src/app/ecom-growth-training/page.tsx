@@ -183,7 +183,7 @@ export default function EcomGrowthTrainingPage() {
               Course Content
             </p>
             <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-black text-black leading-tight">
-              3 lessons to scale e-commerce ads
+              The E-Commerce Ad Playbook
             </h2>
           </div>
 

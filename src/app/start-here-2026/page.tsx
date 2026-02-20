@@ -219,7 +219,7 @@ export default function StartHere2026Page() {
               Course Content
             </p>
             <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-black text-black leading-tight">
-              4 essential lessons for media buyers
+              The 2026 Media Buyer Playbook
             </h2>
           </div>
 
