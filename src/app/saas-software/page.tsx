@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, ChevronDown, ExternalLink } from 'lucide-react'
+import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 const lessons = [
   {
@@ -18,8 +18,6 @@ const lessons = [
     ],
     solution:
       'HYROS connects your subscription billing data directly to your ad campaigns, giving you accurate attribution from first click to recurring revenue. See which ads drive actual paying customers, not just trial signups.',
-    docsUrl: 'https://docs.hyros.com/category/initial/',
-    docsLabel: 'Initial Setup Guide',
   },
   {
     id: 2,
@@ -34,8 +32,6 @@ const lessons = [
     ],
     solution:
       'HYROS tracks the complete SaaS funnel from signup to subscription, allowing you to optimize campaigns around actual revenue events. Stop paying for trials that never convert and focus spend on sources that drive real MRR.',
-    docsUrl: 'https://docs.hyros.com/saas-tracking/',
-    docsLabel: 'SaaS Tracking Guide',
   },
   {
     id: 3,
@@ -50,8 +46,6 @@ const lessons = [
     ],
     solution:
       'HYROS forecasts customer lifetime value using your historical subscription data, including churn rates and expansion revenue. Make scaling decisions based on projected ARR, not just initial conversion value.',
-    docsUrl: 'https://docs.hyros.com/ltv-forecasting/',
-    docsLabel: 'LTV Forecasting Guide',
   },
 ]
 
@@ -133,18 +127,6 @@ function LessonAccordion({
                 <p className="text-[15px] text-black/60 leading-relaxed">{lesson.solution}</p>
               </div>
 
-              {/* Documentation Link */}
-              <a
-                href={lesson.docsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[14px] font-medium text-black hover:text-black/70 transition-colors"
-              >
-                <span className="border-b border-black/30 hover:border-black pb-0.5">
-                  {lesson.docsLabel}
-                </span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
             </div>
           </div>
         </div>

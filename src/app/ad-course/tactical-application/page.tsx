@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, ChevronDown, ExternalLink } from 'lucide-react'
+import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 const lessons = [
   {
@@ -18,8 +18,6 @@ const lessons = [
     ],
     solution:
       'Learn the exact framework for identifying scale-ready campaigns using AI attribution data. This lesson covers how to increase spend confidently without sacrificing profitability.',
-    docsUrl: 'https://docs.hyros.com/scaling-guide/',
-    docsLabel: 'Scaling Guide',
   },
   {
     id: 2,
@@ -34,8 +32,6 @@ const lessons = [
     ],
     solution:
       'Discover how to use granular attribution data to surgically reduce CPA. Learn to identify exactly where waste is occurring and eliminate it without losing your best-performing traffic.',
-    docsUrl: 'https://docs.hyros.com/cpa-optimization/',
-    docsLabel: 'CPA Optimization',
   },
   {
     id: 3,
@@ -50,8 +46,6 @@ const lessons = [
     ],
     solution:
       'Master the art of LTV-based optimization. This lesson shows you how to forecast customer lifetime value and use it to make bolder, more profitable advertising decisions.',
-    docsUrl: 'https://docs.hyros.com/ltv-optimization/',
-    docsLabel: 'LTV Optimization Guide',
   },
   {
     id: 4,
@@ -66,8 +60,6 @@ const lessons = [
     ],
     solution:
       'Learn how to make AI-powered campaigns work by feeding them clean, accurate attribution data. This lesson reveals the specific signals that help Meta and Google AI find your best customers.',
-    docsUrl: 'https://docs.hyros.com/ai-campaigns/',
-    docsLabel: 'AI Campaigns Guide',
   },
   {
     id: 5,
@@ -82,8 +74,6 @@ const lessons = [
     ],
     solution:
       'This master-level lesson teaches you to build AI-powered remarketing campaigns that target exactly the right people with the right message. Learn to create dynamic audiences based on actual revenue data, not just website visits.',
-    docsUrl: 'https://docs.hyros.com/ai-remarketing/',
-    docsLabel: 'AI Remarketing Setup',
   },
 ]
 
@@ -153,17 +143,6 @@ function LessonAccordion({
                 <p className="text-[15px] text-black/60 leading-relaxed">{lesson.solution}</p>
               </div>
 
-              <a
-                href={lesson.docsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[14px] font-medium text-black hover:text-black/70 transition-colors"
-              >
-                <span className="border-b border-black/30 hover:border-black pb-0.5">
-                  {lesson.docsLabel}
-                </span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
             </div>
           </div>
         </div>

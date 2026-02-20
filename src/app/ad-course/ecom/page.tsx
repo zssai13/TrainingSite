@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, ChevronDown, ExternalLink } from 'lucide-react'
+import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 const lessons = [
   {
@@ -18,8 +18,6 @@ const lessons = [
     ],
     solution:
       'Get an up-to-date breakdown of what\'s working right now for e-commerce advertisers. This lesson covers the latest platform changes, attribution models, and strategies that top DTC brands are using to maintain profitability.',
-    docsUrl: 'https://docs.hyros.com/ecommerce-2026/',
-    docsLabel: 'E-Commerce 2026 Guide',
   },
   {
     id: 2,
@@ -34,8 +32,6 @@ const lessons = [
     ],
     solution:
       'Learn the low-hanging fruit of e-commerce attribution. These quick implementations can boost your ROAS within days, not weeks. Perfect for getting started or demonstrating value before diving deeper.',
-    docsUrl: 'https://docs.hyros.com/quick-wins-ecom/',
-    docsLabel: 'Quick Wins Guide',
   },
   {
     id: 3,
@@ -50,8 +46,6 @@ const lessons = [
     ],
     solution:
       'Dive deep into advanced e-commerce attribution strategies including multi-touch modeling, cohort analysis, and predictive LTV. These tactics separate the top 1% of e-commerce advertisers from everyone else.',
-    docsUrl: 'https://docs.hyros.com/advanced-ecom/',
-    docsLabel: 'Advanced Tactics Guide',
   },
 ]
 
@@ -121,17 +115,6 @@ function LessonAccordion({
                 <p className="text-[15px] text-black/60 leading-relaxed">{lesson.solution}</p>
               </div>
 
-              <a
-                href={lesson.docsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[14px] font-medium text-black hover:text-black/70 transition-colors"
-              >
-                <span className="border-b border-black/30 hover:border-black pb-0.5">
-                  {lesson.docsLabel}
-                </span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
             </div>
           </div>
         </div>

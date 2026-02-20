@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, ChevronDown, ExternalLink } from 'lucide-react'
+import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 const lessons = [
   {
@@ -18,8 +18,6 @@ const lessons = [
     ],
     solution:
       'Get an up-to-date breakdown of what\'s working right now for SaaS and B2B advertisers. This lesson covers subscription tracking, demo attribution, and how to optimize for lifetime value in recurring revenue businesses.',
-    docsUrl: 'https://docs.hyros.com/saas-b2b-2026/',
-    docsLabel: 'SaaS/B2B 2026 Guide',
   },
   {
     id: 2,
@@ -34,8 +32,6 @@ const lessons = [
     ],
     solution:
       'Learn the low-hanging fruit of SaaS attribution. These quick implementations work with Stripe, Chargebee, and other subscription platforms. Start seeing accurate MRR attribution within days.',
-    docsUrl: 'https://docs.hyros.com/quick-wins-saas/',
-    docsLabel: 'Quick Wins Guide',
   },
   {
     id: 3,
@@ -50,8 +46,6 @@ const lessons = [
     ],
     solution:
       'Dive deep into advanced SaaS attribution including cohort-based LTV modeling, churn prediction, and expansion revenue tracking. Learn to identify which traffic sources produce your highest-value, longest-retained customers.',
-    docsUrl: 'https://docs.hyros.com/advanced-saas/',
-    docsLabel: 'Advanced Tactics Guide',
   },
 ]
 
@@ -121,17 +115,6 @@ function LessonAccordion({
                 <p className="text-[15px] text-black/60 leading-relaxed">{lesson.solution}</p>
               </div>
 
-              <a
-                href={lesson.docsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[14px] font-medium text-black hover:text-black/70 transition-colors"
-              >
-                <span className="border-b border-black/30 hover:border-black pb-0.5">
-                  {lesson.docsLabel}
-                </span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
             </div>
           </div>
         </div>

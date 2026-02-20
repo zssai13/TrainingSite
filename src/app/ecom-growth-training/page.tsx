@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, ChevronDown, ExternalLink } from 'lucide-react'
+import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 const lessons = [
   {
@@ -18,8 +18,6 @@ const lessons = [
     ],
     solution:
       'HYROS provides accurate attribution and eliminates tracking gaps between your ad platforms and actual sales. By connecting directly to your payment processor and tracking the full customer journey, HYROS ensures you see every conversion—claiming at least 15-20% ROAS improvements for most businesses.',
-    docsUrl: 'https://docs.hyros.com/category/initial/',
-    docsLabel: 'Initial Setup Guide',
   },
   {
     id: 2,
@@ -34,8 +32,6 @@ const lessons = [
     ],
     solution:
       'HYROS integrates your system data to display true profit accounting for all cost factors beyond ad spend. See your actual margins on every sale and optimize your campaigns for profit, not just revenue.',
-    docsUrl: 'https://docs.hyros.com/about-hard-costs/',
-    docsLabel: 'Hard Costs Documentation',
   },
   {
     id: 3,
@@ -50,8 +46,6 @@ const lessons = [
     ],
     solution:
       'HYROS forecasts customer lifetime value using historical and new data, including subscription revenue projections. Make scaling decisions based on the true value of each customer, not just their first purchase.',
-    docsUrl: 'https://docs.hyros.com/ltv-forecasting/',
-    docsLabel: 'LTV Forecasting Guide',
   },
   {
     id: 4,
@@ -66,8 +60,6 @@ const lessons = [
     ],
     solution:
       'HYROS integrates directly into your ad managers via our Chrome extension. See accurate HYROS data right inside Facebook, Google, and other ad platforms without leaving your workflow.',
-    docsUrl: 'https://docs.hyros.com/hyros-chrome-app-2/',
-    docsLabel: 'Chrome Extension Setup',
   },
   {
     id: 5,
@@ -82,8 +74,6 @@ const lessons = [
     ],
     solution:
       'HYROS provides customizable dashboards powered by accurate data for unified reporting. Build the exact views you need in minutes and share them with your team or clients.',
-    docsUrl: 'https://docs.hyros.com/quick-reports-2/',
-    docsLabel: 'Quick Reports Guide',
   },
 ]
 
@@ -165,18 +155,6 @@ function LessonAccordion({
                 <p className="text-[15px] text-black/60 leading-relaxed">{lesson.solution}</p>
               </div>
 
-              {/* Documentation Link */}
-              <a
-                href={lesson.docsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[14px] font-medium text-black hover:text-black/70 transition-colors"
-              >
-                <span className="border-b border-black/30 hover:border-black pb-0.5">
-                  {lesson.docsLabel}
-                </span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
             </div>
           </div>
         </div>

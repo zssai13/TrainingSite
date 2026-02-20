@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, ChevronDown, ExternalLink } from 'lucide-react'
+import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 const lessons = [
   {
@@ -18,8 +18,6 @@ const lessons = [
     ],
     solution:
       'Learn how to identify and amplify your most profitable traffic sources using AI attribution. This lesson shows you exactly how to restructure your funnel tracking to maximize profit per visitor, not just conversion rate.',
-    docsUrl: 'https://docs.hyros.com/funnel-optimization/',
-    docsLabel: 'Funnel Optimization Guide',
   },
   {
     id: 2,
@@ -34,8 +32,6 @@ const lessons = [
     ],
     solution:
       'Discover how to flip the switch from short-term revenue thinking to long-term profit optimization. This approach has helped businesses increase their effective ROAS by 40% or more by accounting for repeat purchases and upsells.',
-    docsUrl: 'https://docs.hyros.com/ltv-tracking/',
-    docsLabel: 'LTV Tracking Setup',
   },
   {
     id: 3,
@@ -50,8 +46,6 @@ const lessons = [
     ],
     solution:
       'Learn to segment your conversion events by customer value so ad platforms can optimize for your highest-revenue buyers. This technique alone can transform unprofitable campaigns into winners.',
-    docsUrl: 'https://docs.hyros.com/value-based-optimization/',
-    docsLabel: 'Value-Based Optimization',
   },
   {
     id: 4,
@@ -66,8 +60,6 @@ const lessons = [
     ],
     solution:
       'The criss-cross effect is when customers bounce between platforms before buying. Learn how to properly attribute these complex journeys and avoid the costly mistake of over-crediting individual channels.',
-    docsUrl: 'https://docs.hyros.com/cross-platform-attribution/',
-    docsLabel: 'Cross-Platform Attribution',
   },
   {
     id: 5,
@@ -82,8 +74,6 @@ const lessons = [
     ],
     solution:
       'Your ad platform\'s AI is only as good as the data you feed it. Learn the exact process for training Meta, Google, and TikTok algorithms to find customers who actually generate profit, not just clicks.',
-    docsUrl: 'https://docs.hyros.com/ai-training/',
-    docsLabel: 'AI Training Guide',
   },
 ]
 
@@ -153,17 +143,6 @@ function LessonAccordion({
                 <p className="text-[15px] text-black/60 leading-relaxed">{lesson.solution}</p>
               </div>
 
-              <a
-                href={lesson.docsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[14px] font-medium text-black hover:text-black/70 transition-colors"
-              >
-                <span className="border-b border-black/30 hover:border-black pb-0.5">
-                  {lesson.docsLabel}
-                </span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
             </div>
           </div>
         </div>

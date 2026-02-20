@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, ChevronDown, ExternalLink } from 'lucide-react'
+import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 const lessons = [
   {
@@ -18,8 +18,6 @@ const lessons = [
     ],
     solution:
       'HYROS connects your phone system to your ad campaigns, tracking every call back to its source. See exactly which ads, audiences, and creatives are driving your highest-value phone leads.',
-    docsUrl: 'https://docs.hyros.com/category/initial/',
-    docsLabel: 'Initial Setup Guide',
   },
   {
     id: 2,
@@ -34,8 +32,6 @@ const lessons = [
     ],
     solution:
       'HYROS tracks which calls convert to actual sales, allowing you to optimize campaigns around revenue, not just lead volume. Train your ad algorithms on your best customers, not just anyone who picks up the phone.',
-    docsUrl: 'https://docs.hyros.com/call-tracking/',
-    docsLabel: 'Call Tracking Guide',
   },
   {
     id: 3,
@@ -50,8 +46,6 @@ const lessons = [
     ],
     solution:
       'HYROS forecasts customer lifetime value using historical data, including future payments and upsells. Make scaling decisions based on the true long-term value of each customer, not just the initial sale.',
-    docsUrl: 'https://docs.hyros.com/ltv-forecasting/',
-    docsLabel: 'LTV Forecasting Guide',
   },
   {
     id: 4,
@@ -66,8 +60,6 @@ const lessons = [
     ],
     solution:
       'HYROS integrates directly into your ad managers via our Chrome extension. See accurate call attribution data right inside Facebook, Google, and other ad platforms without leaving your workflow.',
-    docsUrl: 'https://docs.hyros.com/hyros-chrome-app-2/',
-    docsLabel: 'Chrome Extension Setup',
   },
   {
     id: 5,
@@ -82,8 +74,6 @@ const lessons = [
     ],
     solution:
       'HYROS provides customizable dashboards that unify your call data with advertising performance. Build the exact views you need in minutes and share them with your team or clients.',
-    docsUrl: 'https://docs.hyros.com/quick-reports-2/',
-    docsLabel: 'Quick Reports Guide',
   },
 ]
 
@@ -153,17 +143,6 @@ function LessonAccordion({
                 <p className="text-[15px] text-black/60 leading-relaxed">{lesson.solution}</p>
               </div>
 
-              <a
-                href={lesson.docsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[14px] font-medium text-black hover:text-black/70 transition-colors"
-              >
-                <span className="border-b border-black/30 hover:border-black pb-0.5">
-                  {lesson.docsLabel}
-                </span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
             </div>
           </div>
         </div>

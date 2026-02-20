@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, ChevronDown, ExternalLink } from 'lucide-react'
+import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 const lessons = [
   {
@@ -18,8 +18,6 @@ const lessons = [
     ],
     solution:
       'The single most important concept in paid advertising — the lesson that everything else builds on. Understand this and every decision you make with your ad spend becomes clearer, from budget allocation to scaling.',
-    docsUrl: 'https://docs.hyros.com/category/initial/',
-    docsLabel: 'Getting Started Guide',
   },
   {
     id: 2,
@@ -34,8 +32,6 @@ const lessons = [
     ],
     solution:
       'Cut through the noise and focus on the single metric that determines whether your ads are profitable. Learn how to track it accurately with HYROS so every scaling and cutting decision is based on real revenue data.',
-    docsUrl: 'https://docs.hyros.com/funnel-tracking/',
-    docsLabel: 'Tracking Setup Guide',
   },
   {
     id: 3,
@@ -50,8 +46,6 @@ const lessons = [
     ],
     solution:
       'Identify and eliminate the biggest source of wasted ad spend in your campaigns. Once you see where the money is going, you can plug the leak and redirect that budget toward campaigns that actually convert.',
-    docsUrl: 'https://docs.hyros.com/quick-reports-2/',
-    docsLabel: 'Reporting Guide',
   },
   {
     id: 4,
@@ -66,8 +60,6 @@ const lessons = [
     ],
     solution:
       'Learn how to feed accurate conversion data from HYROS back into your ad platform AIs so they optimize toward your real customers. Better data in means better targeting out — and that compounds as you scale.',
-    docsUrl: 'https://docs.hyros.com/category/initial/',
-    docsLabel: 'AI Optimization Guide',
   },
 ]
 
@@ -137,17 +129,6 @@ function LessonAccordion({
                 <p className="text-[15px] text-black/60 leading-relaxed">{lesson.solution}</p>
               </div>
 
-              <a
-                href={lesson.docsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[14px] font-medium text-black hover:text-black/70 transition-colors"
-              >
-                <span className="border-b border-black/30 hover:border-black pb-0.5">
-                  {lesson.docsLabel}
-                </span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
             </div>
           </div>
         </div>

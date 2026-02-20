@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, ChevronDown, ExternalLink } from 'lucide-react'
+import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react'
 
 const lessons = [
   {
@@ -18,8 +18,6 @@ const lessons = [
     ],
     solution:
       'HYROS provides a centralized dashboard where you can manage all client accounts from one place. Set up consistent tracking across clients and instantly see which accounts need attention.',
-    docsUrl: 'https://docs.hyros.com/agency-setup/',
-    docsLabel: 'Agency Setup Guide',
   },
   {
     id: 2,
@@ -34,8 +32,6 @@ const lessons = [
     ],
     solution:
       'HYROS gives you accurate attribution data that matches your clients\' actual revenue. Generate professional reports in minutes that clearly demonstrate the ROI of your campaigns.',
-    docsUrl: 'https://docs.hyros.com/client-reporting/',
-    docsLabel: 'Client Reporting Guide',
   },
   {
     id: 3,
@@ -50,8 +46,6 @@ const lessons = [
     ],
     solution:
       'HYROS shows you exactly which campaigns are driving real revenue, so you can scale with confidence. Make data-driven decisions that consistently deliver results for your clients.',
-    docsUrl: 'https://docs.hyros.com/scaling-campaigns/',
-    docsLabel: 'Scaling Guide',
   },
   {
     id: 4,
@@ -66,8 +60,6 @@ const lessons = [
     ],
     solution:
       'HYROS offers white-label reporting options so you can deliver branded, professional reports to your clients. Customize dashboards to show exactly what each client needs to see.',
-    docsUrl: 'https://docs.hyros.com/white-label/',
-    docsLabel: 'White-Label Setup',
   },
   {
     id: 5,
@@ -82,8 +74,6 @@ const lessons = [
     ],
     solution:
       'HYROS provides granular permission controls so you can give team members exactly the access they need. Track all changes and maintain security across your organization.',
-    docsUrl: 'https://docs.hyros.com/team-management/',
-    docsLabel: 'Team Management Guide',
   },
 ]
 
@@ -153,17 +143,6 @@ function LessonAccordion({
                 <p className="text-[15px] text-black/60 leading-relaxed">{lesson.solution}</p>
               </div>
 
-              <a
-                href={lesson.docsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[14px] font-medium text-black hover:text-black/70 transition-colors"
-              >
-                <span className="border-b border-black/30 hover:border-black pb-0.5">
-                  {lesson.docsLabel}
-                </span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
             </div>
           </div>
         </div>
