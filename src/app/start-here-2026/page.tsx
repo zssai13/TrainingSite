@@ -8,82 +8,66 @@ const lessons = [
   {
     id: 1,
     number: '01',
-    title: 'Using Correct Data To Scale Ads',
-    duration: '4 min',
-    videoId: '6uyc4d8dfe',
+    title: 'The #1 Paid Advertising Lesson',
+    duration: '8 min',
+    videoId: '65b8t1c8f8',
     problem: [
-      'Phone calls aren\'t being tracked back to the ads that generated them',
-      'Ad platforms miss call conversions entirely or attribute them incorrectly',
-      'Making scaling decisions without knowing which ads drive phone leads',
+      'Running ads without understanding the fundamental principle that separates profitable campaigns from money pits',
+      'Relying on platform "best practices" that are designed to get you to spend more, not earn more',
+      'No framework for evaluating whether an ad campaign is actually working before it burns through budget',
     ],
     solution:
-      'HYROS connects your phone system to your ad campaigns, tracking every call back to its source. See exactly which ads, audiences, and creatives are driving your highest-value phone leads.',
+      'The single most important concept in paid advertising — the lesson that everything else builds on. Understand this and every decision you make with your ad spend becomes clearer, from budget allocation to scaling.',
     docsUrl: 'https://docs.hyros.com/category/initial/',
-    docsLabel: 'Initial Setup Guide',
+    docsLabel: 'Getting Started Guide',
   },
   {
     id: 2,
     number: '02',
-    title: 'Optimize Ads For High Converting Customers',
-    duration: '5 min',
-    videoId: 'kht91wxugs',
+    title: 'The Only Metric That Matters In Ads',
+    duration: '8 min',
+    videoId: '4fkpz7h3gj',
     problem: [
-      'All leads look the same to ad platforms—no distinction between tire-kickers and buyers',
-      'Optimizing for call volume instead of call quality',
-      'No way to feed closed deal data back to your ad platforms',
+      'Drowning in vanity metrics like CTR, CPM, and impressions that don\'t tell you if you\'re making money',
+      'Ad platforms surface dozens of metrics but hide the one that actually determines profitability',
+      'Making optimization decisions based on the wrong numbers and wondering why results don\'t improve',
     ],
     solution:
-      'HYROS tracks which calls convert to actual sales, allowing you to optimize campaigns around revenue, not just lead volume. Train your ad algorithms on your best customers, not just anyone who picks up the phone.',
-    docsUrl: 'https://docs.hyros.com/call-tracking/',
-    docsLabel: 'Call Tracking Guide',
+      'Cut through the noise and focus on the single metric that determines whether your ads are profitable. Learn how to track it accurately with HYROS so every scaling and cutting decision is based on real revenue data.',
+    docsUrl: 'https://docs.hyros.com/funnel-tracking/',
+    docsLabel: 'Tracking Setup Guide',
   },
   {
     id: 3,
     number: '03',
-    title: 'Maximize Long Term Profit With LTV',
-    duration: '6 min',
-    videoId: '55c0ekbal0',
+    title: 'The #1 Source Of Wasted Ad Spend',
+    duration: '4 min',
+    videoId: 'izsitlfo6r',
     problem: [
-      'High-ticket sales often involve multiple calls and long sales cycles',
-      'Platform tracking ignores repeat purchases and upsells',
-      'Unable to optimize for lifetime customer value',
+      'Bleeding budget on a common mistake that most media buyers don\'t even realize they\'re making',
+      'Ad platforms are incentivized to keep this hidden because it drives more spend on their end',
+      'Scaling campaigns that look profitable on the surface but are leaking money underneath',
     ],
     solution:
-      'HYROS forecasts customer lifetime value using historical data, including future payments and upsells. Make scaling decisions based on the true long-term value of each customer, not just the initial sale.',
-    docsUrl: 'https://docs.hyros.com/ltv-forecasting/',
-    docsLabel: 'LTV Forecasting Guide',
+      'Identify and eliminate the biggest source of wasted ad spend in your campaigns. Once you see where the money is going, you can plug the leak and redirect that budget toward campaigns that actually convert.',
+    docsUrl: 'https://docs.hyros.com/quick-reports-2/',
+    docsLabel: 'Reporting Guide',
   },
   {
     id: 4,
     number: '04',
-    title: 'Plug ACCURATE Data Into Your Ad Managers',
-    duration: '4 min',
-    videoId: 'mvdr7crkqa',
+    title: 'Optimizing Ad AIs',
+    duration: '2 min',
+    videoId: 'hbezdpi3fi',
     problem: [
-      'Switching between HYROS and ad platforms to compare data',
-      'Manual data entry and spreadsheet reconciliation',
-      'Decision-making slowed by fragmented analytics',
+      'Ad platform algorithms are optimizing toward the wrong conversion events and audiences',
+      'Feeding bad data into Meta, Google, and TikTok AIs leads to worse results the more you spend',
+      'No strategy for training ad algorithms on your actual buyers instead of low-quality leads',
     ],
     solution:
-      'HYROS integrates directly into your ad managers via our Chrome extension. See accurate call attribution data right inside Facebook, Google, and other ad platforms without leaving your workflow.',
-    docsUrl: 'https://docs.hyros.com/hyros-chrome-app-2/',
-    docsLabel: 'Chrome Extension Setup',
-  },
-  {
-    id: 5,
-    number: '05',
-    title: 'Create Fast Dashboard Reports For Your KEY Metrics',
-    duration: '5 min',
-    videoId: 'opw9v390lw',
-    problem: [
-      'Building reports manually from multiple data sources',
-      'No unified view of call performance and ad spend',
-      'Hours spent reconciling phone system data with marketing data',
-    ],
-    solution:
-      'HYROS provides customizable dashboards that unify your call data with advertising performance. Build the exact views you need in minutes and share them with your team or clients.',
-    docsUrl: 'https://docs.hyros.com/quick-reports-2/',
-    docsLabel: 'Quick Reports Guide',
+      'Learn how to feed accurate conversion data from HYROS back into your ad platform AIs so they optimize toward your real customers. Better data in means better targeting out — and that compounds as you scale.',
+    docsUrl: 'https://docs.hyros.com/category/initial/',
+    docsLabel: 'AI Optimization Guide',
   },
 ]
 
@@ -172,7 +156,7 @@ function LessonAccordion({
   )
 }
 
-export default function CallBasedTrainingPage() {
+export default function StartHere2026Page() {
   const [openLesson, setOpenLesson] = useState<number | null>(1)
 
   return (
@@ -217,8 +201,8 @@ export default function CallBasedTrainingPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="aspect-video bg-black overflow-hidden order-2 lg:order-1">
               <iframe
-                src="https://fast.wistia.net/embed/iframe/drhan93ocz?seo=true&videoFoam=true"
-                title="Welcome to Call-Based Training"
+                src="https://fast.wistia.net/embed/iframe/coth3r8ktp?seo=true&videoFoam=true"
+                title="Start Here - Paid Ads In 2026"
                 allow="autoplay; fullscreen"
                 frameBorder="0"
                 className="w-full h-full"
@@ -230,15 +214,16 @@ export default function CallBasedTrainingPage() {
                 Start Here
               </p>
               <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-black text-black leading-tight mb-6">
-                Welcome to Call-Based Training
+                Paid Ads In 2026
               </h2>
               <p className="text-black/60 leading-relaxed mb-6">
-                Before diving into the lessons, watch this quick introduction to understand how
-                this training is structured and what you&apos;ll achieve by the end.
+                These are the critical lessons every media buyer needs to understand in 2026,
+                regardless of niche. Watch this intro to see what&apos;s changed and what you need to
+                know before running another dollar of ad spend.
               </p>
               <p className="text-black/60 leading-relaxed">
-                Each lesson is designed to be completed in under 5 minutes, with immediate
-                actionable takeaways you can apply to your HYROS account right away.
+                Each lesson covers a core principle that applies across all business models
+                and advertising platforms.
               </p>
             </div>
           </div>
@@ -253,7 +238,7 @@ export default function CallBasedTrainingPage() {
               Course Content
             </p>
             <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-black text-black leading-tight">
-              5 lessons to track call conversions
+              4 essential lessons for media buyers
             </h2>
           </div>
 
@@ -278,8 +263,8 @@ export default function CallBasedTrainingPage() {
               Need more help?
             </h2>
             <p className="text-black/60 leading-relaxed mb-10">
-              Join our community to share strategies with other call-based businesses
-              and get direct support from the HYROS team.
+              Dive deeper into your specific business model with our tailored training tracks,
+              or browse the documentation for step-by-step setup guides.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
