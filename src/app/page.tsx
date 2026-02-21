@@ -102,9 +102,8 @@ export default function HomePage() {
               <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-6">
                 Training Platform
               </p>
-              <h1 className="font-display text-[clamp(2.75rem,6vw,5rem)] font-black leading-[1.1] text-black mb-8">
-                Scale your ads like a
-                <br />
+              <h1 className="font-display text-[clamp(2.5rem,5vw,4.25rem)] font-black leading-[1.1] text-black mb-8">
+                Scale your ads like a{' '}
                 <span className="text-black/70">9-figure media buyer</span>
               </h1>
               <p className="text-lg text-black/60 leading-relaxed max-w-xl mb-10">
@@ -125,28 +124,30 @@ export default function HomePage() {
               <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-6">
                 Your Coaches
               </p>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
                 {coaches.map((coach) => (
-                  <div key={coach.name} className="flex flex-col items-start">
-                    <div className="w-20 h-20 lg:w-24 lg:h-24 shrink-0 border-2 border-black overflow-hidden mb-4">
+                  <div key={coach.name} className="flex items-start gap-4">
+                    <div className="w-16 h-16 lg:w-20 lg:h-20 shrink-0 border-2 border-black overflow-hidden">
                       <Image
                         src={coach.image}
                         alt={coach.name}
-                        width={96}
-                        height={96}
+                        width={80}
+                        height={80}
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
-                    <p className="font-display font-black text-base lg:text-lg text-black leading-tight">
-                      {coach.name}
-                    </p>
-                    <p className="text-[13px] text-black/40 mt-1">
-                      {coach.role}
-                    </p>
-                    <p className="text-[14px] text-black/60 leading-snug mt-2">
-                      <span className="font-display font-black text-black">{coach.stat}</span>
-                      {' '}{coach.statLabel}
-                    </p>
+                    <div className="min-w-0 pt-0.5">
+                      <p className="font-display font-black text-[15px] lg:text-base text-black leading-tight">
+                        {coach.name}
+                      </p>
+                      <p className="text-[12px] text-black/40 mt-0.5">
+                        {coach.role}
+                      </p>
+                      <p className="text-[13px] text-black/60 leading-snug mt-1.5">
+                        <span className="font-display font-black text-black">{coach.stat}</span>
+                        {' '}{coach.statLabel}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>
