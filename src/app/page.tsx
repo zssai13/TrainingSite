@@ -96,61 +96,61 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 lg:pt-44 lg:pb-32">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="max-w-3xl">
-            <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-6">
-              Training Platform
-            </p>
-            <h1 className="font-display text-[clamp(2.75rem,6vw,5rem)] font-black leading-[1.1] text-black mb-8">
-              Scale your ads like a
-              <br />
-              <span className="text-black/70">9-figure media buyer</span>
-            </h1>
-            <p className="text-lg text-black/60 leading-relaxed max-w-xl mb-10">
-              Strategies from media buyers who have scaled campaigns to 8 and 9 figures
-              — built for your business model and ready to apply in 2026.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+            {/* Left Column — Headline */}
+            <div>
+              <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-6">
+                Training Platform
+              </p>
+              <h1 className="font-display text-[clamp(2.75rem,6vw,5rem)] font-black leading-[1.1] text-black mb-8">
+                Scale your ads like a
+                <br />
+                <span className="text-black/70">9-figure media buyer</span>
+              </h1>
+              <p className="text-lg text-black/60 leading-relaxed max-w-xl mb-10">
+                Strategies from media buyers who have scaled campaigns to 8 and 9 figures
+                — built for your business model and ready to apply in 2026.
+              </p>
+              <a
+                href="#select-model"
+                className="group inline-flex items-center gap-3 bg-black text-white px-6 py-3.5 text-[15px] font-medium hover:bg-black/80 transition-all"
+              >
+                Start Learning
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </a>
+            </div>
 
-            {/* Coaches Grid */}
-            <div className="mb-12">
-              <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-5">
+            {/* Right Column — Coaches Grid */}
+            <div>
+              <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-6">
                 Your Coaches
               </p>
-              <div className="grid grid-cols-2 gap-x-10 gap-y-6 max-w-xl">
+              <div className="grid grid-cols-2 gap-6">
                 {coaches.map((coach) => (
-                  <div key={coach.name} className="flex items-start gap-4">
-                    <div className="w-14 h-14 shrink-0 border-2 border-black overflow-hidden">
+                  <div key={coach.name} className="flex flex-col items-start">
+                    <div className="w-20 h-20 lg:w-24 lg:h-24 shrink-0 border-2 border-black overflow-hidden mb-4">
                       <Image
                         src={coach.image}
                         alt={coach.name}
-                        width={56}
-                        height={56}
+                        width={96}
+                        height={96}
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
-                    <div className="min-w-0">
-                      <p className="font-display font-black text-[15px] text-black leading-tight">
-                        {coach.name}
-                      </p>
-                      <p className="text-[12px] text-black/40 leading-snug mt-0.5">
-                        {coach.role}
-                      </p>
-                      <p className="text-[13px] text-black/60 leading-snug mt-1.5">
-                        <span className="font-display font-black text-black">{coach.stat}</span>
-                        {' '}{coach.statLabel}
-                      </p>
-                    </div>
+                    <p className="font-display font-black text-base lg:text-lg text-black leading-tight">
+                      {coach.name}
+                    </p>
+                    <p className="text-[13px] text-black/40 mt-1">
+                      {coach.role}
+                    </p>
+                    <p className="text-[14px] text-black/60 leading-snug mt-2">
+                      <span className="font-display font-black text-black">{coach.stat}</span>
+                      {' '}{coach.statLabel}
+                    </p>
                   </div>
                 ))}
               </div>
             </div>
-
-            <a
-              href="#select-model"
-              className="group inline-flex items-center gap-3 bg-black text-white px-6 py-3.5 text-[15px] font-medium hover:bg-black/80 transition-all"
-            >
-              Start Learning
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </a>
           </div>
         </div>
       </section>
