@@ -12,7 +12,8 @@
       "mcp__playwright__browser_evaluate",
       "mcp__playwright__browser_close",
       "WebFetch(domain:alexbecker.wistia.com)",
-      "WebFetch(domain:fast.wistia.com)"
+      "WebFetch(domain:fast.wistia.com)",
+      "mcp__playwright__browser_wait_for"
     ]
   }
 }

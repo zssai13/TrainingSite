@@ -1,7 +1,39 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, BookOpen, TrendingUp, Phone, Layers, GraduationCap } from 'lucide-react'
+
+const coaches = [
+  {
+    name: 'Alex Becker',
+    role: 'Founder, HYROS',
+    image: '/coach-alex.png',
+    stat: '$200M',
+    statLabel: 'SaaS built with paid ads',
+  },
+  {
+    name: 'Mike Buontempo',
+    role: 'Founder, Client Accelerators',
+    image: '/coach-mike.png',
+    stat: '$300M+',
+    statLabel: 'in sales, #1 HYROS user',
+  },
+  {
+    name: 'Antonio Carneiro',
+    role: '9-Figure Media Buyer',
+    image: '/coach-antonio.png',
+    stat: '$350M+',
+    statLabel: 'in ad spend managed',
+  },
+  {
+    name: 'Simon Freeman',
+    role: 'E-com & DTC Expert',
+    image: '/coach-simon.png',
+    stat: '$150M+',
+    statLabel: 'generated from $50M+ spend',
+  },
+]
 
 const businessModels = [
   {
@@ -73,10 +105,45 @@ export default function HomePage() {
               <br />
               <span className="text-black/70">9-figure media buyer</span>
             </h1>
-            <p className="text-lg text-black/60 leading-relaxed max-w-xl mb-12">
+            <p className="text-lg text-black/60 leading-relaxed max-w-xl mb-10">
               Strategies from media buyers who have scaled campaigns to 8 and 9 figures
               — built for your business model and ready to apply in 2026.
             </p>
+
+            {/* Coaches Grid */}
+            <div className="mb-12">
+              <p className="text-[13px] uppercase tracking-[0.2em] text-black/40 mb-5">
+                Your Coaches
+              </p>
+              <div className="grid grid-cols-2 gap-x-10 gap-y-6 max-w-xl">
+                {coaches.map((coach) => (
+                  <div key={coach.name} className="flex items-start gap-4">
+                    <div className="w-14 h-14 shrink-0 border-2 border-black overflow-hidden">
+                      <Image
+                        src={coach.image}
+                        alt={coach.name}
+                        width={56}
+                        height={56}
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </div>
+                    <div className="min-w-0">
+                      <p className="font-display font-black text-[15px] text-black leading-tight">
+                        {coach.name}
+                      </p>
+                      <p className="text-[12px] text-black/40 leading-snug mt-0.5">
+                        {coach.role}
+                      </p>
+                      <p className="text-[13px] text-black/60 leading-snug mt-1.5">
+                        <span className="font-display font-black text-black">{coach.stat}</span>
+                        {' '}{coach.statLabel}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             <a
               href="#select-model"
               className="group inline-flex items-center gap-3 bg-black text-white px-6 py-3.5 text-[15px] font-medium hover:bg-black/80 transition-all"
