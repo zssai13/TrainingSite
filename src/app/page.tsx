@@ -69,13 +69,13 @@ export default function HomePage() {
               Training Platform
             </p>
             <h1 className="font-display text-[clamp(2.75rem,6vw,5rem)] font-black leading-[1.1] text-black mb-8">
-              Master the art of
+              Scale your ads like a
               <br />
-              <span className="text-black/70">ad attribution</span>
+              <span className="text-black/70">9-figure media buyer</span>
             </h1>
             <p className="text-lg text-black/60 leading-relaxed max-w-xl mb-12">
-              Learn to track, attribute, and optimize your advertising with bite-sized lessons
-              designed for your specific business model.
+              Strategies from media buyers who have scaled campaigns to 8 and 9 figures
+              — built for your business model and ready to apply in 2026.
             </p>
             <a
               href="#select-model"
