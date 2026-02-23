@@ -455,6 +455,15 @@ function SubModuleAccordion({
                 </h4>
                 <p className="text-[15px] text-black/60 leading-relaxed">{subModule.solution}</p>
               </div>
+
+              <a
+                href="https://clientaccelerators.com/book-a-call/?sl=hyrosagencypage"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[14px] text-black/40 hover:text-black transition-colors border-b border-black/20 hover:border-black pb-0.5"
+              >
+                Want Mike to personally help you with this? Click here to book a consultation.
+              </a>
             </div>
           </div>
         </div>
@@ -611,7 +620,7 @@ export default function AgencyTrainingPage() {
                     platforms. Buontempo is the #1 user of HYROS, with over 200 clients on
                     the platform.
                   </p>
-                  <div className="flex flex-wrap gap-x-10 gap-y-4">
+                  <div className="flex flex-wrap gap-x-10 gap-y-4 mb-8">
                     <div>
                       <p className="font-display font-black text-xl lg:text-2xl text-black">$300M+</p>
                       <p className="text-[12px] text-black/40 mt-0.5">Sales Generated</p>
@@ -625,6 +634,15 @@ export default function AgencyTrainingPage() {
                       <p className="text-[12px] text-black/40 mt-0.5">YouTube, Meta, Google, TikTok</p>
                     </div>
                   </div>
+                  <a
+                    href="https://clientaccelerators.com/book-a-call/?sl=hyrosagencypage"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-3 bg-black text-white px-6 py-3.5 text-[15px] font-medium hover:bg-black/80 transition-all"
+                  >
+                    Get Help From Mike With Your Ads
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </a>
                 </div>
               </div>
             </div>
