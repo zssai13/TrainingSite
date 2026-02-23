@@ -313,7 +313,7 @@ const modules: Module[] = [
         id: '4.1',
         number: '4.1',
         title: 'Setting Up Benchmarks to Prepare for Scaling',
-        videoId: 'f2jmqavysr',
+        videoId: 'oelaur66uw',
         problem: [
           'Webinar-specific metrics differ from other funnel types but the same benchmarks are being used',
           'No framework for evaluating webinar funnel health before committing to scale',
